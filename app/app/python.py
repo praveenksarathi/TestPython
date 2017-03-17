@@ -1,4 +1,5 @@
 import unittest
+import xmlrunner
 
 # Here's our "unit".
 def IsOdd(n):
@@ -14,7 +15,7 @@ class IsOddTests(unittest.TestCase):
         self.failIf(IsOdd(2))
 
 def main():
-    unittest.main()
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
 
 if __name__ == '__main__':
     main()
