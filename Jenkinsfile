@@ -1,4 +1,7 @@
 node {
+  stage ("checkout") {
+    checkout scm
+  }
   stage ("Build") {
     sh "ls -lrt"
 //  sh "python3 app/app/python.py"
