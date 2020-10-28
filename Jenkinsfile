@@ -4,7 +4,7 @@ node {
   }
   stage ("Build") {
     sh "ls -lrt"
-    sleep 10
+    sleep 100
 //  sh "python3 app/app/python.py"
     sh "python3 app/app/python.py"
   }
