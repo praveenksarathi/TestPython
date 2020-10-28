@@ -5,7 +5,7 @@ node {
   stage ("Build") {
     sh "ls -lrt"
 //  sh "python3 app/app/python.py"
-    sh "python3 app/app/python.py
+    sh "python3 app/app/python.py"
   }
   
   stage ("Commit") {
